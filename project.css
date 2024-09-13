@@ -1,0 +1,328 @@
+html, head, body {
+    margin: 0 0 0 0;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+#wrapper {
+    background-color: rgba(120, 182, 203, 0.408);
+    position: relative;
+    margin-top: 0px;
+    top: 100%;
+    bottom: 0px;
+}
+
+#jump-top img {
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 98; /* Increase this value to ensure it's in front */
+}
+
+#top-page {
+    position: relative;
+    top: 0px;
+}
+
+#jump-down {
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(255, 253, 253, 0.442);
+    padding: 20px 0;
+    height: 10%;
+    margin-bottom: 0px;
+    opacity: 1;
+    position: absolute;
+    top: 85%;
+    z-index: 10;
+}
+
+#jump-down img {
+    margin-right: 48%;
+    margin-left: 48%;
+    width: 50px;
+    height: 50px;
+}
+
+.button {
+    background-color: rgba(45, 29, 223, 0.325);
+    width: 96%;
+    padding: 2%;
+    position: fixed;
+    top: 0px;
+    height: 2%;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.button > span > a {
+    border-left: 10px;
+    border-left-style: dashed;
+    border-color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.button:hover {
+    transition: all 1s;
+    color: rgb(216, 183, 183);
+    text-decoration: none;
+    color: rgb(255, 111, 0);
+    padding: 30px;
+    transform: scale(1.01);
+    background-color: rgb(45, 29, 223);
+    text-align: justify;
+    box-shadow: 5px;
+}
+
+.button > span > a:hover {
+    transition: all 1s;
+    color: rgb(216, 183, 183);
+    text-decoration: none;
+}
+
+/* Initially hide the list */
+#myList {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    left: 20px;
+    margin-top: 10px;
+    background-color: rgba(200, 200, 200, 0.8);
+    padding: 10px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Show the list when hovering on the "Content" link or the list itself */
+.button > span:hover #myList,
+#myList:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Add a delay to hide the list when you stop hovering */
+#myList {
+    transition: opacity 0.5s ease, visibility 0.5s ease 0.5s; /* Add delay for hiding */
+}
+
+#maintext{
+    background-color: rgb(50, 128, 255);
+    border: 1px;
+    border-radius: 10px;
+    padding: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 46%;
+    margin-top: 3px;
+}
+#My-Experience{
+    transition: all 0.5s;
+    background-color: aliceblue;
+    text-align: center;
+    border: 1px;
+    border-radius: 30px;
+    padding: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 46%;
+}
+#My-Experience:hover{
+    transition: all 0.5s;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 3px;
+    animation-name: exp;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+
+}
+@keyframes exp{
+    from{background-color: aliceblue;}
+    to{background-color: rgb(222, 202, 164);}
+    
+}
+#My-Education{
+    transition: all 0.5s;
+    background-color: aliceblue;
+    text-align: center;
+    border: 1px;
+    border-radius: 30px;
+    padding: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 46%;
+    margin-top: 10px;
+}
+#My-Education:hover{
+    transition: all 0.5s;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 3px;
+    animation-name: exp;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+
+}
+#My-Motivation{
+    transition: all 0.5s;
+    background-color: aliceblue;
+    text-align: center;
+    border: 1px;
+    border-radius: 30px;
+    padding: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 46%;
+    margin-top: 10px;
+}
+#My-Motivation:hover{
+    transition: all 0.5s;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 3px;
+    animation-name: exp;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+
+}
+#Golden-Text{
+    transition: all 0.5s;
+    background-color: aliceblue;
+    text-align: center;
+    border: 1px;
+    border-radius: 30px;
+    padding: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 46%;
+    margin-top: 10px;
+}
+#Golden-Text:hover{
+    transition: all 0.5s;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 3px;
+    animation-name: exp;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+
+}
+.button > div{
+    text-align: center;
+    color: aliceblue;
+    font-style: oblique;
+    font-size: larger;
+}
+#modal-contact>div{
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    border-color: rgb(0, 0, 0);
+}
+.modal{
+    
+    
+    border-radius: 15px;
+    position: fixed;
+    width: 50%;
+    margin-left: 25%;
+    top: 200px;
+    
+}
+#modal-contact>div:target{
+    opacity: 1;
+    z-index: 102;
+    
+}
+.modal-wrapper{
+    background-color: rgba(0, 0, 0, 0.278);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    z-index: -2;
+}
+.modal-wrapper:target{
+    background-color: rgba(0, 0, 0, 0.525);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 1;
+    z-index:101;
+}
+.close-modal img{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    width: 20px;
+    border-radius: 15px;
+    z-index: 102;
+}
+#footer{
+    transition: all 1s;
+    text-align: center;
+    border-top: 2px;
+    border-top-color: black;
+    background-color:rgb(0, 238, 255) ;
+    margin-top: 10px;
+    height: 0.5%;
+    width: 96%;
+    padding: 2%;
+    position: relative;
+    bottom: 0;
+}
+#footer:hover{
+    transition: all 1s;
+    background-color: aquamarine;
+    
+    font-size: 1.1em;
+}
+#footer>a{
+    text-decoration: none;
+}
+#about{
+    transition: all 1s;
+    float: left;
+    left: 1px;
+    margin-top: 3px;
+    background-color: rgb(96, 70, 212);
+    width: 12.5%;
+    height: 15%;
+    border-radius: 30px 10px 30px 10px;
+    text-align: center;
+}
+#about:hover{
+    transition: all 1s;
+    transform: scale(1.1);
+    background-color:rgba(96, 70, 212, 0.629) ;
+}
+#menu{
+    transition: all 1s;
+    float: right;
+    right: 3px;
+    margin-top: 3px;
+    background-color: rgb(96, 70, 212);
+    width: 12.5%;
+    height: 15%;
+    border-radius: 10px 30px 10px 30px;
+    text-align: center;
+    font-size: large;
+    position: relative;
+}
+#menu:hover{
+    transition: all 1s;
+    transform: scale(1.01);
+    background-color:rgba(96, 70, 212, 0.629) ;
+}
+#menu>li>a{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
